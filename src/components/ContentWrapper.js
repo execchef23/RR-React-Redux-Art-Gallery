@@ -1,7 +1,9 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import Photo from './Photo'
 
 function ContentWrapper() {
+    const mode = useSelector((state) => state.mode)
 
     return (
         <div className="ContentWrapper" style={{'backgroundColor': 'white'}}>
